@@ -1,0 +1,96 @@
+/* GOOGLE FONTS  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400&display=swap");
+
+* {
+  /* background-color: cyan; */
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 20px 15px;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    padding: 0 25px;
+    /* font-size: 15px; */
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+ul >li> a:hover{
+color: gray;
+}
+
+.logo{
+    height: 10px;
+}
+
+main{
+    padding: 2px;
+    min-height: 100vh;
+}
+
+#username{
+    width: 14vw;
+}
+
+.container{
+    background-color: azure;
+    max-width: 80vw;
+    margin: auto;
+    padding: 15px;
+}
+
+.container h1{
+    padding: 12px 0;
+}
+
+.btn{
+    background: black;
+    color: white;
+    padding: 9px 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#results div::first-letter{
+text-transform: uppercase;
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .container{
+        font-size: 12px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        padding: 6px 0;
+    }
+    .logo img{
+        width: 15px;
+        filter:invert(1);
+    }
+}
